@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+h1 {
+  color: #39ff14;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #ff1c1c;
+  animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  }
+  to {
+    text-shadow: 0 0 20px #39ff14, 0 0 30px #ff1c1c;
+  }
+}
+
+.space {
+  background: linear-gradient(282deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    padding: 10px;
+  }
+}
